@@ -1,0 +1,149 @@
+.experience {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.exp-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.exp-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+  margin-bottom: 24px;
+}
+
+.exp-container {
+  display: flex;
+  gap: 48px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  align-items: flex-start;
+}
+
+/* ── Left sticky timeline ── */
+.exp-timeline {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-width: 220px;
+  padding-left: 24px;
+  align-self: flex-start;
+}
+
+.exp-line {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background-color: var(--border);
+  z-index: 0;
+}
+
+.exp-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.exp-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--border);
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: -21px;
+}
+
+.exp-timeline-item.active .exp-dot {
+  background-color: var(--teal);
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.2);
+}
+
+.exp-company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+.exp-timeline-item.active .exp-company {
+  color: var(--teal);
+}
+
+.exp-duration {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* ── Right scrollable content ── */
+.exp-scroll {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.exp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-position {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.exp-company-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.exp-duration-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.exp-responsibilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-responsibilities li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.exp-responsibilities li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+}
+

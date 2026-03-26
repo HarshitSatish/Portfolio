@@ -1,0 +1,127 @@
+/* Education section wrapper */
+.education {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* Section heading */
+.edu-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Horizontal divider below heading */
+.edu-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 24px;
+}
+
+/* Rounded box — uses .box from App.css */
+.edu-box {
+  padding: 40px 32px;
+}
+
+/* Timeline row — items spread horizontally */
+.edu-timeline {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  position: relative;
+  padding: 0 24px;
+}
+
+/* Horizontal connecting line — sits at the dot level */
+.edu-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* Each education item */
+.edu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top section — degree info sits above the line */
+.edu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  min-height: 100px;
+  justify-content: flex-end;
+  padding: 0 8px;
+}
+
+/* Degree title */
+.edu-degree {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* School name in teal */
+.edu-institution {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+/* Major / field of study */
+.edu-field {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Dot row — centers the dot on the horizontal line */
+.edu-dot-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+/* Teal dot with glow ring */
+.edu-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--teal);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px var(--teal);
+  z-index: 2;
+}
+
+/* Bottom section — year sits below the line */
+.edu-bottom {
+  min-height: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Year label */
+.edu-year {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: center;
+}

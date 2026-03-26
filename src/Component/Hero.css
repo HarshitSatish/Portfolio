@@ -1,0 +1,120 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 48px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.Hero_photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 75%;
+  object-fit: cover;
+  border: 3px solid var(--teal);
+  flex-shrink: 0;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.Hero_name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.Hero_current {
+  font-size: 1.25rem;
+  font-weight: 1000;
+  max-width: 100%;
+  color: var(--text-primary);
+}
+
+
+.Hero_course_name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.Hero_location {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+
+.Hero_roles {
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 150%;
+  color: var(--text-primary);
+}
+
+.Hero_general {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+.Hero_button {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.Hero_button a {
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.Hero_github {
+  background-color: var(--teal);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.Hero_github:hover {
+  background-color: var(--teal-dim);
+}
+
+
+.Hero_linkedln {
+  background-color: var(--teal);
+  color: var(--bg-primary);
+  font-weight: 600;
+  border: 1px solid var(--teal);
+}
+
+.Hero_linkedln:hover {
+  background-color: var(--teal-dim);
+}
+
+.Hero_email {
+  background-color: var(--teal);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.Hero_email:hover {
+  background-color: var(--teal-dim);
+}

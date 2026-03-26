@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*\n:root{\n  --bg-color: #1C2E45;\n  --text-primary: #000000;\n*/
+
+:root {
+  --bg-primary: #122330;
+  --bg-secondary: #92b1f6;
+  --bg-card: #1a2235;
+  --teal: #15a16e;
+  --teal-dim: #a0b42e;
+  --text-primary: #f4ecec;
+  --text-secondary: #c1c5cb;
+  --border: #1e2d40;
+  --radius: 12px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.section{
+  padding: 80px 24px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.section-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  margin-bottom: 8px;
+}
+
+.section-title span{
+  color: var(--teal);
+}
+
+.section-subtitle{
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-size: small;
+}
+
+/* Hidden state — before the element is visible */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Visible state — added by JavaScript when element scrolls into view */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 32px;
+  backdrop-filter: blur(4px);
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}

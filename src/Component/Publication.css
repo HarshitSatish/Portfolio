@@ -1,0 +1,92 @@
+.publications {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.pub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.pub-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 24px;
+}
+
+/* Two cards per row */
+.pub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.pub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+/* Publisher badge */
+.pub-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--teal);
+  background-color: rgba(45, 212, 191, 0.1);
+  border: 1px solid rgba(45, 212, 191, 0.3);
+  border-radius: 50px;
+  padding: 3px 12px;
+  align-self: flex-start;
+}
+
+.pub-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.pub-conference {
+  font-size: 0.8rem;
+  color: var(--teal);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.pub-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.pub-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pub-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.pub-link {
+  font-size: 0.8rem;
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.pub-link:hover {
+  opacity: 0.7;
+}

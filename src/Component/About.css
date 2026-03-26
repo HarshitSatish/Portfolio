@@ -1,0 +1,82 @@
+/* About section wrapper */
+.about {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* Section heading */
+.about-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Horizontal divider line below heading */
+.about-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+  margin-bottom: 24px;
+}
+
+/* Rounded box containing everything */
+.about-box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* Two intro lines at the top of the box */
+.about-line {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Second line gets a bottom border to separate from chart */
+.about-line:last-of-type {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Chart — vertical stack of bar rows */
+.about-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each row: label on left, bar on right */
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Label on the left side */
+.about-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 160px;
+  text-align: right;
+}
+
+/* Colored bar */
+.about-bar {
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  min-width: 120px;
+  transition: width 0.6s ease;
+}
+
+/* Text inside the bar */
+.about-bar-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
